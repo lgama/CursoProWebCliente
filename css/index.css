@@ -1,0 +1,80 @@
+:root {
+    --colorPrincipal: rgb(243, 226, 228);
+    --colorSecundario: rgb(130, 193, 11);
+    --colorBotones: rgb(18, 181, 240);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--colorPrincipal);
+}
+
+/* --------------------- Configuracion del Header */
+header {
+    height: 135px;
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.header__img {
+    height: 130px;
+    width: 185px;
+}
+.header_title {
+    height: 130px;
+    width: 700px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.header__img img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.header__title h1 {
+    color: var(--colorSecundario);
+    font-family: 'Arial Black';
+    font-size: 2rem;
+}
+/* --------------------- Configuracion del Article */
+article{
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.article__login {
+    margin: 50px;
+}
+.article__login__img {
+    margin: 50px;
+}
+.article__login__inputs {
+    margin: 50px;
+}
+
+/* --------------------- Configuracion del Footer */
+
+footer {
+    /* display: none; */
+    width: 900px;
+    height: 110px;
+    margin: auto;
+}
+
+.footer__img {
+    float: left;
+}
+.footer_img img{
+    border-radius: 100px;
+    width: 90px;
+}
