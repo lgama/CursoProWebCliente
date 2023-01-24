@@ -85,4 +85,21 @@ Fucionar 2 ramas
 
 	//estando en la rama principal
 
-	git merge rama2 “mensaje porque se crea un nuevo commit en la rama principal”
+	git merge rama2 -m “mensaje porque se crea un nuevo commit en la rama principal”
+
+
+---------------------------------------------------------
+DESHACER CAMBIOS
+Desahacer los cambios en todos los archivos volviendo al commit especificado en el codigo
+	//deja el staging area intacto.
+	codigoCommit : se obtiene con git log
+	git reset  codigoCommit  --soft
+	//regresa al commit especificado quitando tambien todo del staging area
+	git reset  codigoCommit  --hard
+
+Deshacer cambios en algun archivo devolviendolo a un commit especifico
+	git checkout codigoCommitAntiguo archivo.ext	
+	//sin modificar el staging area
+	//Deja todos los commits intactos, asi que podemos ver el archivo y luego traer otra vez el
+ 	//archivo del ultimo commit
+	git checkout codigoCommitMasNuevo archivo.ext
